@@ -1,6 +1,6 @@
 /**
-* Template Name: Sailor
-* Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+* template Name: mkeen
+* template URL: https://bootstrapmade.com/mkeen-free-bootstrap-theme/
 * Updated: Aug 07 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -21,7 +21,7 @@
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #556270; /* Color for headings, subheadings and title throughout the website */
+  --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #d9232d; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -393,7 +393,9 @@ h6 {
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
-
+.dropdown{
+  color: black;
+}
   .navmenu .dropdown ul {
     position: static;
     display: none;
@@ -404,6 +406,7 @@ h6 {
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     transition: all 0.5s ease-in-out;
+    color: black;
   }
 
   .navmenu .dropdown ul ul {
@@ -2322,9 +2325,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 /*--------------------------------------------------------------
 # Widgets
@@ -2652,3 +2652,5 @@ section,
                 grid-template-columns: 1fr;
             }
         }
+        
+        

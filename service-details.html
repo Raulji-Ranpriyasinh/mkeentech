@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - Sailor Bootstrap Template</title>
+  <title>Service Details Mkeen | Engineering Project Maker</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -28,8 +28,8 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Sailor
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * template Name: mkeen
+  * template URL: https://bootstrapmade.com/mkeen-free-bootstrap-theme/
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
@@ -38,31 +38,50 @@
 
 <body class="service-details-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <img
-            src="assets/img/Mkeen_logo_removed.png"
-            style="height: 40px; padding-left: 25px"
-            alt="Logo"
-          />
-        </a>
+        <img src="assets/img/Mkeen_logo_removed.png" style="height: 40px; padding-left: 25px" alt="Logo" />
+      </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li ><a href="about.html"><span>About</span></a></li>
-          <li><a href="services.html">Services</a></li>
-          
-         
+          <li class="dropdown">
+            <!-- <li><a href="services.html">Services</a></li> -->
+          <li class="dropdown"><span style="color: black; font-weight: 500; font-size: 15px;">Services</span> <i
+              class="bi bi-chevron-down toggle-dropdown"></i>
+            <ul>
+
+              <li class="dropdown"><a href="#"><span>Project Development</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="service-details.html?parent=software">Software Projects</a></li>
+                  <li><a href="service-details.html?parent=electrical">Electrical Projects</a></li>
+                  <li><a href="service-details.html?parent=electronic">Electronic / Robot Projects</a></li>
+                  <li><a href="service-details.html?parent=mechanical">Mechanical Projects</a></li>
+
+                </ul>
+              </li>
+              <li><a href="service-details.html?parent=thesis"><span>Publication & Thesis Writing</span> </i></a>
+
+              </li>
+              <li><a href="service-details.html?parent=lab"><span>Lab Development</span> </i></a>
+
+              </li>
+            </ul>
+          </li>
           <li><a href="contact.html">Contact</a></li>
+          <a href="about.html"><span>About</span></a>
+          </li>
+
+
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="about.html">Get Started</a>
-
+      <a class="btn-getstarted" href="services.html">Get Started</a>
     </div>
   </header>
 
@@ -82,65 +101,98 @@
     </div><!-- End Page Title -->
 
     <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
+    <!-- <section id="service-details" class="service-details section">
 
       <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="active">Web Design</a>
-              <a href="#">Software Development</a>
-              <a href="#">Product Management</a>
-              <a href="#">Graphic Design</a>
-              <a href="#">Marketing</a>
-            </div>
+          <div class="row gy-4">
+  
+  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+<div class="services-list">
+  <a href="#" data-service="software-dev">Software Projects</a>
+  <a href="#" data-service="electrical">Electrical Projects</a>
+  <a href="#" data-service="robotics">Electronic / Robot Projects</a>
+  <a href="#" data-service="mechanical">Mechanical Projects</a>
+  <a href="#" data-service="thesis">Thesis Publication</a>
+  <a href="#" data-service="lab">Lab Development</a>
+</div>
+  </div>
 
-            <h4>Enim qui eos rerum in delectus</h4>
-            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
-          </div>
-
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p>
-          </div>
-
-        </div>
+  
+  <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+    <div class="service-content">
+      <div class="service-item" id="web-template">
+        <h3>Web template</h3>
+        <p>Web template content here...</p>
+      </div>
+      <div class="service-item" id="software-dev" style="display:none;">
+        <h3>Software Development</h3>
+        <p>Software content here...</p>
+      </div>
+      <div class="service-item" id="product-mgmt" style="display:none;">
+        <h3>Product Management</h3>
+        <p>Product Management content here...</p>
+      </div>
+      <div class="service-item" id="graphic-template" style="display:none;">
+        <h3>Graphic template</h3>
+        <p>Graphic template content here...</p>
+      </div>
+      <div class="service-item" id="marketing" style="display:none;">
+        <h3>Marketing</h3>
+        <p>Marketing content here...</p>
+      </div>
+    </div>
+  </div>
+</div>
 
       </div>
 
-    </section><!-- /Service Details Section -->
+    </section> -->
+    
+
+
+<section id="service-details" class="service-details section">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- LEFT: SUB-SERVICE MENU -->
+      <div class="col-lg-4">
+        <div id="subServiceMenu" class="services-list"></div>
+      </div>
+
+      <!-- RIGHT: SUB-SERVICE CONTENT -->
+      <div class="col-lg-8">
+        <div id="subServiceContent"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- /Service Details Section -->
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-
+ <footer id="footer" class="footer dark-background">
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Sailor</span>
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+              <img src="assets/img/Mkeen_logo_removed.png" style="height: 40px" alt="Logo" />
+            </a>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Vadodara,Gujarat</p>
+            <p>India</p>
+            <p class="mt-3">
+              <strong>Phone:</strong> <span>+91 8200271302</span>
+            </p>
+            <p><strong>Email:</strong> <span>mkeentech@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -153,50 +205,74 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
-
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Project Development</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li>Software Projects</li>
+            <li>Electrical Projects</li>
+            <li>Electronics Projects</li>
+            <li>Mechanical Projects</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Thesis & Publication</h4>
+          <ul>
+            <li>Thesis Guidance</li>
+            <li>Research Paper Writing</li>
+            <li>Journal Submissions</li>
           </ul>
         </div>
 
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Lab Development </h4>
+          <ul>
+            <li>Electronics Lab Setup</li>
+            <li>Robotics Lab Setup</li>
+            <li>Software & Simulation labs</li>
+          </ul>
         </div>
 
+        <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>
+              Subscribe to our newsletter and receive the latest news about our
+              products and services!
+            </p>
+            <form
+              action="forms/newsletter.php"
+              method="post"
+              class="php-email-form"
+            >
+              <div class="newsletter-form">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                Your subscription request has been sent. Thank you!
+              </div>
+            </form>
+          </div> -->
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sailor</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
-      </div>
+      <p>
+        © <span>Copyright</span>
+        <strong class="px-1 sitename">MKeen Tech Solution LLP</strong>
+        <span> · All rights reserved.</span>
+      </p>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -204,6 +280,29 @@
 
   <!-- Preloader -->
   <div id="preloader"></div>
+  <script>
+const buttons = document.querySelectorAll('.services-list a');
+const contents = document.querySelectorAll('.service-item');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+
+    // Remove active class from all buttons
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const service = btn.getAttribute('data-service');
+
+    // Hide all content
+    contents.forEach(c => c.style.display = 'none');
+
+    // Show selected content
+    document.getElementById(service).style.display = 'block';
+  });
+});
+</script>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -218,6 +317,223 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+<!-- <script>
+const parents = document.querySelectorAll('.service-parent');
+const parentLinks = document.querySelectorAll('.services-list a');
+
+function activateParent(parent) {
+  parents.forEach(p => p.hidden = p.id !== parent);
+  parentLinks.forEach(l =>
+    l.classList.toggle('active', l.dataset.parent === parent)
+  );
+
+  const firstSub = document.querySelector(`#${parent} .sub-services button`);
+  if (firstSub) firstSub.click();
+}
+
+document.addEventListener('click', e => {
+  if (e.target.matches('.services-list a')) {
+    e.preventDefault();
+    activateParent(e.target.dataset.parent);
+  }
+
+  if (e.target.matches('.sub-services button')) {
+    const parent = e.target.closest('.service-parent').id;
+    const sub = e.target.dataset.sub;
+
+    document
+      .querySelectorAll(`#${parent} .sub-content > div`)
+      .forEach(d => d.hidden = true);
+
+    document.getElementById(`${parent}-${sub}`).hidden = false;
+  }
+});
+
+const params = new URLSearchParams(location.search);
+activateParent(params.get('parent') || 'software');
+</script> -->
+
+<script>
+  const serviceData = {
+  software: {
+    title: "Software Development",
+    subs: {
+      web: {
+        name: "Web Development",
+        desc: "Custom websites, dashboards, and enterprise web apps."
+      },
+      app: {
+        name: "App Development",
+        desc: "Android, iOS, and cross-platform mobile applications."
+      },
+      api: {
+        name: "API Development",
+        desc: "Secure and scalable REST & GraphQL APIs."
+      },
+      ai: {
+        name: "AI / ML Solutions",
+        desc: "AI-powered automation, ML models, and predictive analytics."
+      }
+    }
+  },
+
+  electrical: {
+    title: "Electrical Projects",
+    subs: {
+      template: {
+        name: "Circuit Design",
+        desc: "Analog and digital circuit template solutions for various applications."
+      },
+      power: {
+        name: "Power Systems",
+        desc: "template and implementation of power electronics and distribution systems."
+      },
+      renewable: {
+        name: "Renewable Energy",
+        desc: "Solar, wind, and hybrid energy system projects."
+      },
+      automation: {
+        name: "Electrical Automation",
+        desc: "PLC-based industrial and building automation solutions."
+      }
+    }
+  },
+
+  robotics: {
+    title: "Electronic / Robot Projects",
+    subs: {
+      embedded: {
+        name: "Embedded Systems",
+        desc: "Microcontroller-based projects and firmware development."
+      },
+      automation: {
+        name: "Industrial Automation",
+        desc: "Automated systems for manufacturing and research labs."
+      },
+      drones: {
+        name: "Drone Projects",
+        desc: "template and control of UAVs for research and commercial use."
+      },
+      aiRobotics: {
+        name: "AI Robotics",
+        desc: "Robots integrated with AI for intelligent task execution."
+      }
+    }
+  },
+
+  mechanical: {
+    title: "Mechanical Projects",
+    subs: {
+      cad: {
+        name: "CAD template",
+        desc: "3D modeling, assembly drawings, and mechanical template."
+      },
+      analysis: {
+        name: "Analysis",
+        desc: "Structural, thermal, and fluid dynamics simulations."
+      },
+      robotics: {
+        name: "Mechatronics",
+        desc: "Integration of mechanical, electrical, and control systems."
+      },
+      prototyping: {
+        name: "Rapid Prototyping",
+        desc: "3D printing and CNC machining for prototype development."
+      }
+    }
+  },
+
+  thesis: {
+    title: "Thesis Publication",
+    subs: {
+      writing: {
+        name: "Thesis Writing",
+        desc: "Complete support for research documentation and formatting."
+      },
+      journal: {
+        name: "Journal Publication",
+        desc: "Assistance for submitting to Scopus, SCI, and IEEE journals."
+      },
+      plagiarism: {
+        name: "Plagiarism Check",
+        desc: "Review and ensure research originality using advanced tools."
+      },
+      formatting: {
+        name: "Formatting & Editing",
+        desc: "Professional editing and formatting for academic standards."
+      }
+    }
+  },
+
+  lab: {
+    title: "Lab Development",
+    subs: {
+      setup: {
+        name: "Lab Setup",
+        desc: "Complete laboratory template and installation solutions."
+      },
+      upgrade: {
+        name: "Lab Modernization",
+        desc: "Upgrade existing labs with modern equipment and technology."
+      },
+      safety: {
+        name: "Safety Compliance",
+        desc: "Ensure lab meets all safety and regulatory standards."
+      },
+      training: {
+        name: "Staff Training",
+        desc: "Train lab personnel on equipment operation and protocols."
+      }
+    }
+  }
+};
+
+
+// -------- LOGIC --------
+
+const params = new URLSearchParams(window.location.search);
+const selectedService = params.get("parent") || "software";
+
+const menu = document.getElementById("subServiceMenu");
+const content = document.getElementById("subServiceContent");
+
+function loadService(serviceKey) {
+  const service = serviceData[serviceKey];
+  if (!service) return;
+
+  // Build left menu
+  menu.innerHTML = `<h4>${service.title}</h4>`;
+  content.innerHTML = "";
+
+  Object.entries(service.subs).forEach(([key, sub], index) => {
+    const link = document.createElement("a");
+    link.href = "#";
+    link.textContent = sub.name;
+    link.className = index === 0 ? "active" : "";
+    link.onclick = e => {
+      e.preventDefault();
+      showSub(serviceKey, key);
+      document.querySelectorAll(".services-list a").forEach(a => a.classList.remove("active"));
+      link.classList.add("active");
+    };
+    menu.appendChild(link);
+
+    // preload first content
+    if (index === 0) showSub(serviceKey, key);
+  });
+}
+
+function showSub(serviceKey, subKey) {
+  const sub = serviceData[serviceKey].subs[subKey];
+  content.innerHTML = `
+    <h3>${sub.name}</h3>
+    <p>${sub.desc}</p>
+  `;
+}
+
+loadService(selectedService);
+
+</script>
 
 </body>
 

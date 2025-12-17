@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact - Sailor Bootstrap Template</title>
+  <title>Contact Mkeen | Engineering Project Maker</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -28,8 +28,8 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Sailor
-  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * template Name: mkeen
+  * template URL: https://bootstrapmade.com/mkeen-free-bootstrap-theme/
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
@@ -38,32 +38,50 @@
 
 <body class="contact-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+    <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <img
-            src="assets/img/Mkeen_logo_removed.png"
-            style="height: 40px; padding-left: 25px"
-            alt="Logo"
-          />
-        </a>
+        <img src="assets/img/Mkeen_logo_removed.png" style="height: 40px; padding-left: 25px" alt="Logo" />
+      </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-      
-          <li><a href="services.html">Services</a></li>
-          
-         
+          <li><a href="index.html" >Home</a></li>
+          <li class="dropdown">
+            <!-- <li><a href="services.html">Services</a></li> -->
+          <li class="dropdown"><span style="color: black; font-weight: 500; font-size: 15px;">Services</span> <i
+              class="bi bi-chevron-down toggle-dropdown"></i>
+            <ul>
+
+              <li class="dropdown"><a href="#"><span>Project Development</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="service-details.html?parent=software">Software Projects</a></li>
+                  <li><a href="service-details.html?parent=electrical">Electrical Projects</a></li>
+                  <li><a href="service-details.html?parent=electronic">Electronic / Robot Projects</a></li>
+                  <li><a href="service-details.html?parent=mechanical">Mechanical Projects</a></li>
+
+                </ul>
+              </li>
+              <li><a href="service-details.html?parent=thesis"><span>Publication & Thesis Writing</span> </i></a>
+
+              </li>
+              <li><a href="service-details.html?parent=lab"><span>Lab Development</span> </i></a>
+
+              </li>
+            </ul>
+          </li>
           <li><a href="contact.html" class="active">Contact</a></li>
-              <li ><a href="about.html"><span>About</span></a></li>
+          <a href="about.html"><span>About</span></a>
+          </li>
+
+
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="about.html">Get Started</a>
-
+      <a class="btn-getstarted" href="services.html">Get Started</a>
     </div>
   </header>
 
@@ -87,9 +105,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
+<!-- End Google Maps -->
 
         <div class="row gy-4">
 
@@ -98,7 +114,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Vadodara,Gujarat</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -106,7 +122,7 @@
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <p>+91 8200271302</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -114,43 +130,52 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <p>mkeentech@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
 
           </div>
+<div class="col-lg-8">
+  <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+    <div class="row g-3">
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+      <!-- Name -->
+      <div class="col-md-6">
+        <input type="text" name="name" class="form-control" placeholder="Your Name *" required>
+      </div>
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
+      <!-- Phone -->
+      <div class="col-md-6">
+        <input type="tel" name="phone" class="form-control" placeholder="Phone *" required>
+      </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
+      <!-- Email -->
+      <div class="col-md-6">
+        <input type="email" name="email" class="form-control" placeholder="Your Email *" required>
+      </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
+      <!-- Subject -->
+      <div class="col-md-6">
+        <input type="text" name="subject" class="form-control" placeholder="Subject *" required>
+      </div>
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
+      <!-- Message -->
+      <div class="col-12">
+        <textarea class="form-control" name="message" rows="6" placeholder="Message *" required></textarea>
+      </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+      <!-- Submit -->
+      <div class="col-12 text-center">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your message has been sent. Thank you!</div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </div>
 
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
+    </div>
+  </form>
+</div>
+<!-- End Contact Form -->
 
         </div>
 
@@ -160,19 +185,22 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-
+ <footer id="footer" class="footer dark-background">
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Sailor</span>
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+              <img src="assets/img/Mkeen_logo_removed.png" style="height: 40px" alt="Logo" />
+            </a>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Vadodara,Gujarat</p>
+            <p>India</p>
+            <p class="mt-3">
+              <strong>Phone:</strong> <span>+91 8200271302</span>
+            </p>
+            <p><strong>Email:</strong> <span>mkeentech@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -185,50 +213,74 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
-
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Project Development</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li>Software Projects</li>
+            <li>Electrical Projects</li>
+            <li>Electronics Projects</li>
+            <li>Mechanical Projects</li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Thesis & Publication</h4>
+          <ul>
+            <li>Thesis Guidance</li>
+            <li>Research Paper Writing</li>
+            <li>Journal Submissions</li>
           </ul>
         </div>
 
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Lab Development </h4>
+          <ul>
+            <li>Electronics Lab Setup</li>
+            <li>Robotics Lab Setup</li>
+            <li>Software & Simulation labs</li>
+          </ul>
         </div>
 
+        <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>
+              Subscribe to our newsletter and receive the latest news about our
+              products and services!
+            </p>
+            <form
+              action="forms/newsletter.php"
+              method="post"
+              class="php-email-form"
+            >
+              <div class="newsletter-form">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                Your subscription request has been sent. Thank you!
+              </div>
+            </form>
+          </div> -->
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Sailor</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
-      </div>
+      <p>
+        © <span>Copyright</span>
+        <strong class="px-1 sitename">MKeen Tech Solution LLP</strong>
+        <span> · All rights reserved.</span>
+      </p>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->

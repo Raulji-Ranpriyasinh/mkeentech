@@ -3035,7 +3035,7 @@
    * Constants
    */
 
-  const NAME$5 = 'TemplateFactory';
+  const NAME$5 = 'templateFactory';
   const Default$4 = {
     allowList: DefaultAllowlist,
     content: {},
@@ -3064,7 +3064,7 @@
    * Class definition
    */
 
-  class TemplateFactory extends Config {
+  class templateFactory extends Config {
     constructor(config) {
       super();
       this._config = this._getConfig(config);
@@ -3134,7 +3134,7 @@
         return;
       }
       if (isElement(content)) {
-        this._putElementInTemplate(getElement(content), templateElement);
+        this._putElementIntemplate(getElement(content), templateElement);
         return;
       }
       if (this._config.html) {
@@ -3149,7 +3149,7 @@
     _resolvePossibleFunction(arg) {
       return execute(arg, [this]);
     }
-    _putElementInTemplate(element, templateElement) {
+    _putElementIntemplate(element, templateElement) {
       if (this._config.html) {
         templateElement.innerHTML = '';
         templateElement.append(element);
@@ -3401,12 +3401,12 @@
     }
     _getTipElement() {
       if (!this.tip) {
-        this.tip = this._createTipElement(this._newContent || this._getContentForTemplate());
+        this.tip = this._createTipElement(this._newContent || this._getContentFortemplate());
       }
       return this.tip;
     }
     _createTipElement(content) {
-      const tip = this._getTemplateFactory(content).toHtml();
+      const tip = this._gettemplateFactory(content).toHtml();
 
       // TODO: remove this check in v6
       if (!tip) {
@@ -3429,11 +3429,11 @@
         this.show();
       }
     }
-    _getTemplateFactory(content) {
+    _gettemplateFactory(content) {
       if (this._templateFactory) {
         this._templateFactory.changeContent(content);
       } else {
-        this._templateFactory = new TemplateFactory({
+        this._templateFactory = new templateFactory({
           ...this._config,
           // the `content` var has to be after `this._config`
           // to override config.content in case of popover
@@ -3443,7 +3443,7 @@
       }
       return this._templateFactory;
     }
-    _getContentForTemplate() {
+    _getContentFortemplate() {
       return {
         [SELECTOR_TOOLTIP_INNER]: this._getTitle()
       };
@@ -3721,7 +3721,7 @@
     }
 
     // Private
-    _getContentForTemplate() {
+    _getContentFortemplate() {
       return {
         [SELECTOR_TITLE]: this._getTitle(),
         [SELECTOR_CONTENT]: this._getContent()
