@@ -39,29 +39,51 @@
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <img
-            src="assets/img/Mkeen_logo_removed.png"
-            style="height: 40px; padding-left: 25px"
-            alt="Logo"
-          />
-        </a>
+        <img src="assets/img/Mkeen_logo_removed.png" style="height: 40px; padding-left: 25px" alt="Logo" />
+      </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li ><a href="about.html"><span>About</span></a></li>
-          <li><a href="services.html">Services</a></li>
           
-         
+            <!-- <li><a href="services.html">Services</a></li> -->
+<li class="dropdown">
+  <a href="#">
+    <span style="color: black; font-weight: 500; font-size: 15px;">Services</span>
+    <i class="bi bi-chevron-down toggle-dropdown"></i>
+  </a>
+
+  <ul>
+    <li class="dropdown">
+      <a href="#">
+        <span>Project Development</span>
+        <i class="bi bi-chevron-down toggle-dropdown"></i>
+      </a>
+      <ul>
+        <li><a href="service-details.html?parent=software">Software Projects</a></li>
+        <li><a href="service-details.html?parent=electrical">Electrical Projects</a></li>
+        <li><a href="service-details.html?parent=electronic">Electronic / Robot Projects</a></li>
+        <li><a href="service-details.html?parent=mechanical">Mechanical Projects</a></li>
+      </ul>
+    </li>
+
+    <li><a href="service-details.html?parent=thesis">Publication & Thesis Writing</a></li>
+    <li><a href="service-details.html?parent=lab">Lab Development</a></li>
+  </ul>
+</li>
+
           <li><a href="contact.html">Contact</a></li>
+          <a href="about.html"><span>About</span></a>
+          </li>
+
+
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="about.html">Get Started</a>
-
+      <a class="btn-getstarted" href="services.html">Get Started</a>
     </div>
   </header>
 
@@ -70,11 +92,11 @@
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Starter Page</h1>
+        <h1 class="mb-2 mb-lg-0">Lab Development</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li class="current">Lab Development</li>
           </ol>
         </nav>
       </div>
