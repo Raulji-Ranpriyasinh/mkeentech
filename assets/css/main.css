@@ -2656,17 +2656,9 @@ section,
         
 
 
-
-        @media (max-width: 768px) {
-
+@media (max-width: 768px) {
   .card-section {
-    flex-direction: column;   /* Stack cards */
-    gap: 20px;
-    padding: 0 20px;          /* Side spacing on mobile */
-  }
-
-  .card {
-    width: 100%;
+    flex-direction: column;
   }
 
   .card img {
@@ -2676,8 +2668,8 @@ section,
   .card-content h3 {
     font-size: 20px;
   }
-
 }
+
 
   #projectd.section-container {
   display: flex;
@@ -2725,8 +2717,6 @@ section,
 
 
 .card-section {
-  max-width: 1200px;
-  margin: 60px auto;
   display: flex;
   gap: 30px;
 }
