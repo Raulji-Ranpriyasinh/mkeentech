@@ -27,7 +27,135 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
+<style>
+  /* Mobile Responsive */
+@media (max-width: 768px) {
 
+  .card-section {
+    flex-direction: column;   /* Stack cards */
+    gap: 20px;
+    padding: 0 20px;          /* Side spacing on mobile */
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    height: auto;
+  }
+
+  .card-content h3 {
+    font-size: 20px;
+  }
+
+}
+
+  #projectd.section-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px; /* Optional: constrain width */
+  margin: 2rem auto; /* Optional: center horizontally */
+}
+
+#projectd .image-wrapper {
+  flex: 1;
+}
+
+#projectd .image-wrapper img {
+  width: 100%;
+  max-width: 100px;  /* Control image size */
+  height: auto;
+  object-fit: cover;
+}
+
+#projectd .text-content {
+  flex: 2;
+}
+
+#projectd .section-number {
+  color: #007bff;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0 0 0.5rem 0;
+}
+.section-title{
+  text-align: center;
+}
+
+#projectd .section-title {
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+#projectd .section-description {
+  line-height: 1.6;
+  color: #222;
+  margin: 0;
+}
+
+
+.card-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  /* height: 240px; */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.explore {
+  color: #ff5a3c;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.5px;
+}
+
+.explore span {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.explore:hover span {
+  transform: translateX(6px);
+}
+
+
+</style>
 <body class="starter-page-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
@@ -97,9 +225,42 @@
 
     <!-- Starter Section Section -->
     <section id="starter-section" class="starter-section section">
-
+      <h2 class="section-title">Software Development Services</h2>
       <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+      <section class="card-section">
+  <div class="card">
+
+    <img src="assets/img/software.png" alt="Agile Methodology" />
+    <div class="card-content">
+      <h3>Software Project</h3>
+      <a href="#" class="explore">
+        EXPLORE MORE <span>→</span>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <img src="assets/img/electronics.png" alt="Automation Testing" />
+    <div class="card-content">
+      <h3>Electronic/Electrical project</h3>
+      <a href="#" class="explore">
+        EXPLORE MORE <span>→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="assets/img/mechanical.png" alt="Offshore Development" style="height: 206px;" />
+    <div class="card-content">
+      <h3>Offshore Development</h3>
+      <a href="#" class="explore">
+        EXPLORE MORE <span>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
       </div>
 
     </section><!-- /Starter Section Section -->
