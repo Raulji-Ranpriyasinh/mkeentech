@@ -2731,56 +2731,52 @@ section,
   gap: 30px;
 }
 
+.card-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
 .card {
   background: #fff;
-  border-radius: 6px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  flex: 1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
 }
 
 .card img {
   width: 100%;
-  /* height: 240px; */
+  height: 200px;
   object-fit: cover;
 }
 
 .card-content {
-  padding: 25px;
-  text-align: center;
+  padding: 15px;
+  text-align: left;
 }
 
 .card-content h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 25px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
   color: #000;
 }
 
 .explore {
-  color: #ff5a3c;
-  font-size: 14px;
-  font-weight: 700;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: #007bff;
+  display: inline-block;
 }
 
-.explore span {
-  font-size: 18px;
-  transition: transform 0.3s ease;
-}
-
-.explore:hover span {
-  transform: translateX(6px);
-}
 
 
 
@@ -2827,22 +2823,24 @@ section,
   color: #007bff;
 }
 
-
 @media (max-width: 768px) {
+   /* Lab section – force same stacking behavior */
   #labsection.card-section {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    display: flex;          /* override grid */
+    flex-direction: column;/* stack cards */
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  #labsection .card {
+    width: 100%;
   }
 
   #labsection .card img {
-    height: 120px;
+    height: auto;
   }
 
   #labsection .card-content h3 {
-    font-size: 14px;
-  }
-
-  #labsection .explore {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
