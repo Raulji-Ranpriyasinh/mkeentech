@@ -25,7 +25,258 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+<style>
 
+  /* Reset */
+
+
+/* Section */
+.services-section {
+  padding: 20px 30px;
+  background-color: #ffffff;
+}
+
+/* Container */
+.containers {
+  /* max-width: 1200px; */
+  margin: auto;
+  text-align: center;
+}
+
+/* Title */
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0b2545;
+  margin-bottom: 15px;
+}
+
+/* Subtitle */
+.section-subtitle {
+  font-size: 17px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.service-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 35px 30px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Title */
+.service-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0b2545;
+  margin-bottom: 15px;
+}
+
+/* Card Text */
+.service-card p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Link */
+.service-card a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff3b3b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.service-card a:hover {
+  color: #d62828;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+}
+/* Publication Process Section */
+.containerimg {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading */
+.containerimg h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0b2545;
+  margin-bottom: 30px;
+  /* padding: 60px; */
+}
+
+/* Image */
+.containerimg img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .containerimg {
+    padding: 50px 20px;
+  }
+
+  .containerimg h1 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .containerimg {
+    padding: 40px 15px;
+  }
+
+  .containerimg h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .containerimg img {
+    width: 100%;
+  }
+}
+/* Why Choose Us Section */
+#whychooseus {
+  
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+}
+
+/* Container */
+#whychooseus .why-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Title */
+#whychooseus .why-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: #0b2545;
+  margin-bottom: 15px;
+}
+
+/* Subtitle */
+#whychooseus .why-subtitle {
+  text-align: center;
+  font-size: 17px;
+  color: #6b7280;
+  margin-bottom: 60px;
+}
+
+/* Grid */
+#whychooseus .why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 80px;
+}
+
+/* Item */
+#whychooseus .why-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+/* Icon */
+#whychooseus .why-icon {
+  width: 42px;
+  height: 42px;
+  background: #fff1ea;
+  color: #ff3b3b;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Content */
+#whychooseus .why-content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b2545;
+  margin-bottom: 6px;
+}
+
+#whychooseus .why-content p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  #whychooseus .why-grid {
+    gap: 30px 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #whychooseus .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #whychooseus .why-title {
+    font-size: 34px;
+  }
+
+  #whychooseus .why-subtitle {
+    font-size: 16px;
+  }
+}
+
+
+</style>
 
 </head>
 
@@ -99,9 +350,158 @@
     <!-- Starter Section Section -->
     <section id="starter-section" class="starter-section section">
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+
+      <section class="services-section">
+  <div class="containers">
+    <h2 class="section-title">Publication Services</h2>
+    <p class="section-subtitle">
+      We offer comprehensive research support services to help you achieve your<br />
+      academic goals.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Writing Service</h3>
+        <p>
+          Professional writing assistance for academic papers, articles, and
+          research documents
+        </p>
+        <a href="#">Read More →</a>
       </div>
+
+      <div class="service-card">
+        <h3>Research Services</h3>
+        <p>
+          Comprehensive research support from topic selection to final paper
+          submission
+        </p>
+        <a href="#">Read More →</a>
+      </div>
+
+      <div class="service-card">
+        <h3>PhD Support</h3>
+        <p>
+          Expert guidance and support throughout your PhD journey
+        </p>
+        <a href="#">Read More →</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Conference Paper Publication</h3>
+        <p>
+          Expert assistance in preparing and publishing conference papers
+        </p>
+        <a href="#">Read More →</a>
+      </div>
+
+      <div class="service-card">
+        <h3>Add-On Services</h3>
+        <p>
+          Additional support including editing, formatting, and translation
+          services
+        </p>
+        <a href="#">Read More →</a>
+      </div>
+
+      <div class="service-card">
+        <h3>OJS Services</h3>
+        <p>
+          Professional services for Open Journal Systems setup and management
+        </p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="whychooseus">
+  <div class="why-container">
+    <h2 class="why-title">Why Choose Us</h2>
+    <p class="why-subtitle">
+      We provide comprehensive support throughout your publication journey
+    </p>
+
+    <div class="why-grid">
+      <!-- Item 1 -->
+      <div class="why-item">
+        <div class="why-icon">✓</div>
+        <div class="why-content">
+          <h4>Wide Journal Network</h4>
+          <p>
+            Access to a vast network of reputable journals across various
+            disciplines.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="why-item">
+        <div class="why-icon">✓</div>
+        <div class="why-content">
+          <h4>Expert Guidance</h4>
+          <p>
+            Personalized support from experienced academic publishing
+            professionals.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="why-item">
+        <div class="why-icon">✓</div>
+        <div class="why-content">
+          <h4>Fast-Track Publication</h4>
+          <p>
+            Streamlined processes to accelerate your publication timeline.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="why-item">
+        <div class="why-icon">✓</div>
+        <div class="why-content">
+          <h4>Quality Assurance</h4>
+          <p>
+            Rigorous review to maintain high academic standards.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="why-item">
+        <div class="why-icon">✓</div>
+        <div class="why-content">
+          <h4>Global Reach</h4>
+          <p>
+            Maximum visibility for your research worldwide.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="why-item">
+        <div class="why-icon">✓</div>
+        <div class="why-content">
+          <h4>Author Support</h4>
+          <p>
+            Comprehensive assistance at every step of publication.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div class="containerimg" data-aos="fade-up">
+        <h1>Publication Process</h1>
+       
+        <img src="/assets/img/researchsupport.png" alt="">
+      </div>
+
+      
+
+
 
     </section><!-- /Starter Section Section -->
 
