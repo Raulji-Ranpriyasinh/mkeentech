@@ -2521,7 +2521,7 @@ section,
         #services-section-unique {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f8f9fa;
-            padding: 60px ;
+            /* padding: 60px ; */
         }
 
         #services-section-unique .services-container {
@@ -2695,7 +2695,7 @@ section,
 }
 
 #projectd .section-number {
-  color: #007bff;
+  color: #d9232d;
   font-weight: 600;
   font-size: 14px;
   margin: 0 0 0.5rem 0;
@@ -2724,7 +2724,7 @@ section,
 .card-section {
   max-width: 1200px;
   margin: 60px auto;
-  padding: 40px 20px;
+  padding: 0px 0px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -2763,7 +2763,7 @@ section,
 .explore {
   text-decoration: none;
   font-weight: 600;
-  color: #007bff;
+  color: #d9232d;
   display: inline-block;
 }
 
@@ -2810,7 +2810,7 @@ section,
 #labsection .explore {
   text-decoration: none;
   font-weight: 600;
-  color: #007bff;
+  color: #d9232d;
 }
 
 @media (max-width: 768px) {
@@ -2832,5 +2832,35 @@ section,
 
   #labsection .card-content h3 {
     font-size: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  /* Card section – stack cards vertically */
+  .card-section {
+    display: flex;           /* override grid if any */
+    flex-direction: column; /* stack cards */
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;           /* keep image fully visible */
+    /* object-fit: contain; */
+  }
+
+  .card-content h3 {
+    font-size: 20px;
+  }
+
+  .explore {
+    font-size: 14px;
   }
 }
