@@ -65,7 +65,45 @@
 }
 
 
+.project-intro {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+    font-size: 1.05rem;  /* Slightly larger for readability */
+    line-height: 1.8; /* Better spacing between lines */
+    color: #333333; /* Dark grey text, easier on the eyes than pure black */
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 0px 25px; /* Inner spacing for neatness */
+    border-left: 5px solid #d9232d; /* Accent color strip on left */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Subtle shadow */
+    max-width: 1200px; /* Limits line length for readability */
+    margin: 30px auto; /* Center the paragraph with spacing on top and bottom */
+    text-align: justify; /* Makes the paragraph block neat */
+}
+.project-intro strong {
+    color: #007BFF; /* Highlights keywords in blue */
+}
+@media (max-width: 992px) {
+    .project-intro {
+        font-size: 1rem; /* Slightly smaller font for tablets */
+        padding: 18px 20px;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-intro {
+        font-size: 0.95rem; /* Smaller font for mobile */
+        line-height: 1.6;
+        padding: 15px 15px;
+        border-left: 4px solid #d9232d; /* Slightly smaller accent strip */
+        border-radius: 4px;
+        box-shadow: 0 3px 5px rgba(0,0,0,0.05);
+    }
+}
+
 </style>
+
+
 <body class="starter-page-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
@@ -136,6 +174,9 @@
     <!-- Starter Section Section -->
     <section id="starter-section" class="starter-section section">
       <h2 class="section-title">Electrical, Electronics & IoT project Development Service</h2>
+      <p class="project-intro">
+      Your go-to resource for ideas for final year projects in a variety of engineering specialities is Mkeen Tech Projects. We provide students studying Electrical, Electronics, Civil, and IoT with a variety of creative and useful projects that are appropriate for diploma, degree, MSc, and other engineering specialities. Our carefully selected lists provide students, researchers, and engineers comprehensive study and research assistance on core Electrical Engineering projects, cutting-edge Electronics and Communication designs, intelligent IoT solutions, and Civil Engineering projects.
+      </p>
       <div class="container" data-aos="fade-up">
      <div class="project-list">
 
@@ -169,7 +210,7 @@
               <div class="tab-pane active show" id="features-tab-1">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Architecto ut aperiam autem id</h3>
+                    <h3>Categories of Electrical Project</h3>
                     <ul>
   <li><a href="#">Accident Proof Car</a></li>
   <li><a href="#">Advance Blind Stick</a></li>
@@ -281,6 +322,7 @@
               <div class="tab-pane" id="features-tab-2">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Categories of Electronics Project</h3>
                     <ul>
   <li><a href="#">ACPWM Control System for Induction Motor using AVR Microcontroller</a></li>
   <li><a href="#">Advanced Footstep Power Generation System using RFID for Charging</a></li>
@@ -323,6 +365,7 @@
               <div class="tab-pane" id="features-tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Categories of Civil Project</h3>
                     <ul>
   <li><a href="#">Earthquick Detection and Saifty System</a></li>
   <li><a href="#">Underground Ship Canal</a></li>
@@ -336,6 +379,7 @@
               <div class="tab-pane" id="features-tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Categories of IoT Project</h3>
                     <ul>
   <li><a href="#">Greenhouse Monitoring and Control System using IOT Project</a></li>
   <li><a href="#">IOT Based Coal Mine Safety Monitoring and Alerting System</a></li>

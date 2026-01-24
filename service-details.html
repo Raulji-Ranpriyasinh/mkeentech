@@ -348,27 +348,50 @@ document.addEventListener('click', e => {
 const params = new URLSearchParams(location.search);
 activateParent(params.get('parent') || 'software');
 </script> -->
-
 <script>
-  const serviceData = {
+const serviceData = {
   software: {
     title: "Software Development",
     subs: {
       web: {
         name: "Web Development",
-        desc: "Custom websites, dashboards, and enterprise web apps."
+        desc: `Build modern, responsive websites and web applications tailored to your needs. From interactive dashboards to enterprise-level solutions, we deliver seamless digital experiences that engage users and drive results.
+        
+Our Services Include:
+- Custom websites designed for your brand and audience
+- Interactive dashboards and data-driven web apps
+- Enterprise-level web solutions for scalability and performance
+- Responsive design for seamless experience across devices`
       },
       app: {
         name: "App Development",
-        desc: "Android, iOS, and cross-platform mobile applications."
+        desc: `Design and develop high-performance mobile applications for Android, iOS, and cross-platform platforms.
+        
+Our Services Include:
+- Native Android and iOS app development
+- Cross-platform solutions for seamless performance
+- Intuitive UI/UX design for engaging user experience
+- App maintenance and updates for long-term reliability`
       },
       api: {
         name: "API Development",
-        desc: "Secure and scalable REST & GraphQL APIs."
+        desc: `Create secure and scalable REST & GraphQL APIs to power your applications.
+        
+Our Services Include:
+- RESTful API design and implementation
+- GraphQL APIs for efficient data queries
+- Authentication, security, and data protection
+- API documentation and versioning for easy integration`
       },
       ai: {
         name: "AI / ML Solutions",
-        desc: "AI-powered automation, ML models, and predictive analytics."
+        desc: `Leverage AI and ML for automation, predictive analytics, and smart decision-making.
+        
+Our Services Include:
+- Machine learning model development
+- AI-powered automation solutions
+- Data analytics and predictive insights
+- Integration with web and mobile applications`
       }
     }
   },
@@ -378,19 +401,43 @@ activateParent(params.get('parent') || 'software');
     subs: {
       Design: {
         name: "Circuit Design",
-        desc: "Analog and digital circuit Design solutions for various applications."
+        desc: `Analog and digital circuit design solutions for various applications.
+        
+Our Services Include:
+- Schematic design and simulation
+- PCB layout and prototyping
+- Signal processing and embedded circuits
+- Testing and troubleshooting`
       },
       power: {
         name: "Power Systems",
-        desc: "Design and implementation of power electronics and distribution systems."
+        desc: `Design and implementation of power electronics and distribution systems.
+        
+Our Services Include:
+- Power system planning and design
+- Renewable integration and grid connection
+- Protection and control systems
+- Energy efficiency optimization`
       },
       renewable: {
         name: "Renewable Energy",
-        desc: "Solar, wind, and hybrid energy system projects."
+        desc: `Develop solar, wind, and hybrid energy projects for sustainable solutions.
+        
+Our Services Include:
+- Solar PV system design and installation
+- Wind turbine system integration
+- Hybrid energy solutions
+- Performance monitoring and maintenance`
       },
       automation: {
         name: "Electrical Automation",
-        desc: "PLC-based industrial and building automation solutions."
+        desc: `PLC-based industrial and building automation solutions.
+        
+Our Services Include:
+- PLC programming and integration
+- SCADA and HMI system setup
+- Industrial control system design
+- Process optimization and monitoring`
       }
     }
   },
@@ -400,19 +447,43 @@ activateParent(params.get('parent') || 'software');
     subs: {
       embedded: {
         name: "Embedded Systems",
-        desc: "Microcontroller-based projects and firmware development."
+        desc: `Microcontroller-based projects and firmware development.
+        
+Our Services Include:
+- Embedded hardware and software design
+- Sensor integration and communication
+- Firmware development and testing
+- IoT and smart device applications`
       },
       automation: {
         name: "Industrial Automation",
-        desc: "Automated systems for manufacturing and research labs."
+        desc: `Automated systems for manufacturing and research labs.
+        
+Our Services Include:
+- Robotics process automation
+- Assembly line and manufacturing automation
+- Sensors and actuator integration
+- System monitoring and optimization`
       },
       drones: {
         name: "Drone Projects",
-        desc: "Design and control of UAVs for research and commercial use."
+        desc: `Design and control UAVs for research and commercial purposes.
+        
+Our Services Include:
+- UAV design and prototyping
+- Flight control and navigation systems
+- Sensor and payload integration
+- Testing and regulatory compliance`
       },
       aiRobotics: {
         name: "AI Robotics",
-        desc: "Robots integrated with AI for intelligent task execution."
+        desc: `Robots integrated with AI for intelligent task execution.
+        
+Our Services Include:
+- AI-powered navigation and decision making
+- Object recognition and manipulation
+- Autonomous and semi-autonomous systems
+- Integration with IoT and smart devices`
       }
     }
   },
@@ -422,19 +493,43 @@ activateParent(params.get('parent') || 'software');
     subs: {
       cad: {
         name: "CAD Design",
-        desc: "3D modeling, assembly drawings, and mechanical Design."
+        desc: `3D modeling, assembly drawings, and mechanical design.
+        
+Our Services Include:
+- 3D CAD modeling and assemblies
+- Technical drawings and blueprints
+- Mechanical design optimization
+- Product visualization and rendering`
       },
       analysis: {
         name: "Analysis",
-        desc: "Structural, thermal, and fluid dynamics simulations."
+        desc: `Structural, thermal, and fluid dynamics simulations.
+        
+Our Services Include:
+- Finite element analysis (FEA)
+- Thermal and stress simulations
+- Fluid dynamics modeling
+- Performance optimization`
       },
       robotics: {
         name: "Mechatronics",
-        desc: "Integration of mechanical, electrical, and control systems."
+        desc: `Integration of mechanical, electrical, and control systems.
+        
+Our Services Include:
+- Mechanical-electrical system design
+- Sensor and actuator integration
+- Control system programming
+- Prototyping and testing`
       },
       prototyping: {
         name: "Rapid Prototyping",
-        desc: "3D printing and CNC machining for prototype development."
+        desc: `3D printing and CNC machining for prototype development.
+        
+Our Services Include:
+- 3D printing and additive manufacturing
+- CNC machining and fabrication
+- Prototype testing and refinement
+- Material selection and evaluation`
       }
     }
   },
@@ -444,19 +539,43 @@ activateParent(params.get('parent') || 'software');
     subs: {
       writing: {
         name: "Thesis Writing",
-        desc: "Complete support for research documentation and formatting."
+        desc: `Complete support for research documentation and formatting.
+        
+Our Services Include:
+- Research writing assistance
+- Structuring and formatting guidance
+- Citations and references management
+- Draft review and editing`
       },
       journal: {
         name: "Journal Publication",
-        desc: "Assistance for submitting to Scopus, SCI, and IEEE journals."
+        desc: `Assistance for submitting to Scopus, SCI, and IEEE journals.
+        
+Our Services Include:
+- Journal selection guidance
+- Manuscript formatting and editing
+- Submission support and tracking
+- Peer review preparation`
       },
       plagiarism: {
         name: "Plagiarism Check",
-        desc: "Review and ensure research originality using advanced tools."
+        desc: `Ensure research originality using advanced tools.
+        
+Our Services Include:
+- Advanced plagiarism scanning
+- Detailed originality reports
+- Recommendations for corrections
+- Compliance with academic standards`
       },
       formatting: {
         name: "Formatting & Editing",
-        desc: "Professional editing and formatting for academic standards."
+        desc: `Professional editing and formatting for academic standards.
+        
+Our Services Include:
+- Academic formatting (APA, IEEE, etc.)
+- Grammar and style editing
+- Table, figure, and reference formatting
+- Final review for submission readiness`
       }
     }
   },
@@ -466,23 +585,52 @@ activateParent(params.get('parent') || 'software');
     subs: {
       setup: {
         name: "Lab Setup",
-        desc: "Complete laboratory Design and installation solutions."
+        desc: `Complete laboratory design and installation solutions.
+        
+Our Services Include:
+- Lab layout planning and design
+- Equipment selection and installation
+- Utilities and infrastructure setup
+- Safety and compliance setup`
       },
       upgrade: {
         name: "Lab Modernization",
-        desc: "Upgrade existing labs with modern equipment and technology."
+        desc: `Upgrade existing labs with modern equipment and technology.
+        
+Our Services Include:
+- Equipment replacement and upgrades
+- Smart lab technologies integration
+- Workflow optimization
+- Staff training support`
       },
       safety: {
         name: "Safety Compliance",
-        desc: "Ensure lab meets all safety and regulatory standards."
+        desc: `Ensure lab meets all safety and regulatory standards.
+        
+Our Services Include:
+- Safety audits and assessments
+- Regulatory compliance checks
+- Risk management and mitigation
+- Safety protocols and documentation`
       },
       training: {
         name: "Staff Training",
-        desc: "Train lab personnel on equipment operation and protocols."
+        desc: `Train lab personnel on equipment operation and protocols.
+        
+Our Services Include:
+- Hands-on equipment training
+- Standard operating procedures (SOPs)
+- Safety and emergency training
+- Ongoing support and guidance`
       }
     }
   }
 };
+</script>
+
+<script>
+ 
+  
 
 
 // -------- LOGIC --------
@@ -521,11 +669,33 @@ function loadService(serviceKey) {
 
 function showSub(serviceKey, subKey) {
   const sub = serviceData[serviceKey].subs[subKey];
-  content.innerHTML = `
-    <h3>${sub.name}</h3>
-    <p>${sub.desc}</p>
-  `;
+
+  // Split lines
+  const lines = sub.desc.split("\n").map(line => line.trim()).filter(line => line);
+
+  let html = `<h3>${sub.name}</h3>`;
+
+  // Check if there are bullet points
+  const bulletLines = lines.filter(l => l.startsWith("-"));
+  const normalLines = lines.filter(l => !l.startsWith("-"));
+
+  // Add normal lines as paragraphs
+  normalLines.forEach(line => {
+    html += `<p>${line}</p>`;
+  });
+
+  // Add bullet lines as list
+  if (bulletLines.length > 0) {
+    html += "<ul>";
+    bulletLines.forEach(line => {
+      html += `<li>${line.substring(1).trim()}</li>`; // remove the "-" and trim
+    });
+    html += "</ul>";
+  }
+
+  content.innerHTML = html;
 }
+
 
 loadService(selectedService);
 
